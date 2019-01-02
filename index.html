@@ -1,0 +1,142 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Force Finder</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <style>
+    body,
+    html {
+      height: 100%;
+    }
+
+    #global {
+      height: 100%;
+      background-image: url("img/st-bg.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+
+    }
+
+    #appname {
+      color: yellow;
+      text-align: center;
+    }
+
+    /* Split the screen in half */
+
+    .split {
+      height: 100%;
+      width: 50%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      overflow-x: hidden;
+      padding-top: 20px;
+    }
+
+    /* Control the left side */
+
+    .left {
+      left: 0;
+      background-image: url("img/sw-dv-cigar.jpg");
+      background-position: right;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    /* Control the right side */
+
+    .right {
+      right: 0;
+      background-image: url("img/sw-ds.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    /* If you want the content centered horizontally and vertically */
+
+    .centered {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    /* Style the image inside the centered container, if needed */
+
+    .centered img {
+      width: 150px;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <!-- <div id="global">
+
+    <h1 id="appname">Force Finder</h1>
+    <div id="app"></div>
+
+  </div> -->
+
+
+  <div class="split left">
+    <div class="centered">
+      <div id="app">
+
+      </div>
+    </div>
+  </div>
+
+  <div class="split right">
+    <div class="centered">
+      <img src="/img/st-bg.jpg" alt="Avatar man">
+      <h2 id="appname">Darth Vader</h2>
+      <p id="appname">Não chora.</p>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+  <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  <!--<p>Hello world! This is HTML5 Boilerplate.</p> -->
+  <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <script data-main="js/app" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.5/require.min.js"></script>
+
+
+
+</body>
+
+</html>
